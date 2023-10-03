@@ -1,0 +1,87 @@
+
+.p-one{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+  }
+   .parallax-inner{
+    position:relative;
+    min-height: 380px;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+ 
+ 
+  
+  ul.cards-split-delay {
+    width: 660px;
+    height: 280px;
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 0;
+  }
+  ul.cards-split-delay li.card12 {
+    background: #FFF;
+    overflow: hidden;
+    height: 280px;
+    width: 240px;
+    border-radius: 10px;
+    position: absolute;
+    left: 220px;
+    top: 18%;
+    box-shadow: 1px 2px 2px 0 #aaa;
+    transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+  }
+  ul.cards-split-delay li.card12 img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul.cards-split-delay li.card12 div.content12 {
+    padding: 5px 10px;
+  }
+  ul.cards-split-delay li.card12.card-1 {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+  }
+  ul.cards-split-delay li.card12.card-2 {
+    z-index: 9;
+    transform: rotateZ(-7deg);
+    transition-delay: 0.6s;
+  }
+  ul.cards-split-delay li.card12.card-3 {
+    z-index: 8;
+    transform: rotateZ(5deg);
+    transition-delay: 0s;
+  }
+  ul.cards-split-delay.transition li.card12 {
+    transform: rotateZ(0deg);
+  }
+  ul.cards-split-delay.transition li.card12.card-1 {
+    left: -10%;
+  }
+  ul.cards-split-delay.transition li.card12.card-2 {
+    left: 77%;
+  }
+  ul.cards-split-delay.transition li.card12.card-3 {
+    left: 220px;
+    transition-delay: 0.6s;
+  }
+  .collapsible a {
+    background: lightgrey;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  
+  .collapsed {
+    display: none;
+    background: #f4f4f4;
+    border: 2px solid lightgrey;
+    border-top: 0;
+    padding: 15px;
+  }
+  

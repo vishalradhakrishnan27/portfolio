@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="toggle.css">
+    <link rel="stylesheet" href="powersign.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="imageandlogo.css">
+    <link rel="stylesheet" href="flipcard.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="flipbox.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="paralaxandcard.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+    
+    <script src="portfolio.js"></script> 
+    <script>
+
+$('.container').on('click', function () {
+  $('.card1').toggleClass('flipped');
+});
+
+       $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+/*menu button onclick function*/         $(document).ready(function(){
+            $('.menu h4').click(function(){
+                $("nav ul").toggleClass("active")
+        })
+        })
+
+
+
+
+  jQuery(document).ready(function($){
+	$('ul.cards-split-delay').on('click', function(){
+	  $(this).toggleClass('transition');
+	});
+  });
+
+
+
+  let coll = document.getElementsByClassName("collapsible__button")[0];
+
+coll.addEventListener("click", function () {
+  this.classList.toggle("content--active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight) {
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = "200px";
+  }
+});
+
+let result = document.getElementsByTagNameNS("body");
+function changeColor(color){
+    document.body.style.background=color;
+}
+function myFunc(){
+    changeColor('black');
+}
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <section class="hero videoWrapper" id="home">
+        
+        <div class="main-width">
+            <header>
+            
+                <nav class="full-nav">
+                    
+                    <ul>
+                        <li><a href="#home">Home Page</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Academics</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#Intrests">Intrests</a></li>
+                        <li><a href="https://drive.google.com/file/d/1_bQ7JfI3iCFEB09WGCfDpsdIoZNaJ-Ti/view?usp=sharing" target="_blank">Resume</a></li>
+                        <li><a href="mailto:rvishal21062002@gmail.com">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+                <div class="container">
+                    <div class="hero-text">
+                        <h3>Hey, Guys!</h3>
+                        <span><h1>I am Vishal Radhakrishnan<span class="input"></span></h1>
+                        <div class="wrapper">
+  
+                            <img src="https://media.licdn.com/dms/image/D5603AQEdZP-KwW25ow/profile-displayphoto-shrink_800_800/0/1692857758050?e=2147483647&v=beta&t=KE21aA2DjuCE_YHWHNWFewVP8_A-i-0d4n6mnDOf82g" class="image--cover">
+                            </div>
+                    </span>
+                        <p>For more information</p>
+                        
+                        <div class="social">
+                            
+                            <a href="https://twitter.com/vishalvirat27" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/vishal_virat__27/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vishal-radhakrishnan-a282291a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                        </div>
+                        
+
+                    </div>
+                   
+
+                </div>
+        </div>
+
+    </section>
+    
+    <section id="about" class="dark">
+        <div class="section-title">
+            <h2>ABOUT ME</h2>
+            <p>ABOUT ME</p>
+        </div>
+        
+            <h3>Hey there, I'm <span class="blue">Vishal R</span></h3>
+            <div class="row">
+                <div>
+                    <p>    I'm a passionate Graduate Engineer Trainee with an insatiable curiosity for the world and a deep interest in the field of engineering. But there's so much more to me than just my professional pursuits. Let me take you on a journey to get to know the various facets that make up the person behind the title.</p>
+                    <h3>Engineering<span class="blue"> Enthusiast:</span></h3>
+                    <p>  Engineering isn't just my profession; it's my passion. I thrive on the challenges that engineering presents and constantly seek innovative solutions to real-world problems. As a Graduate Engineer Trainee, I'm on a mission to learn and grow, pushing the boundaries of my knowledge and skills every day.</p>
+                    <h3>A Conversationalist at<span class="blue"> Heart:</span></h3>
+                    <p>  One of my greatest joys in life is engaging in meaningful conversations with people from all walks of life. I firmly believe that every person has a unique story to tell, and I love to listen and learn from them. Whether it's discussing the latest trends in technology or sharing life experiences, I'm always up for a good chat.</p>
+                    <h3>Wanderlust and<span class="blue"> Solo Traveler:</span></h3>
+                    <p>Traveling alone is my way of discovering the world and myself. The thrill of exploring new destinations, immersing myself in different cultures, and facing the unknown head-on is an adventure I crave. From bustling cityscapes to serene natural wonders, I'm always seeking my next solo journey.</p>
+                        <h3>Avid Consumer of<span class="blue"> Film and Series:</span></h3>
+                        <p>Movies and series are my escape from reality. I appreciate the artistry that goes into crafting compelling stories and the emotions they evoke. Whether it's a mind-bending thriller or a heartwarming drama, I'm always up for a movie night or a binge-watching session.
+                                </p>
+                                <h3>Music as a<span class="blue"> Companion:</span></h3>
+                          <p>Music is the soundtrack to my life. I find solace in melodies, and I'm constantly exploring different genres to suit my mood. From soothing tunes that help me unwind to energetic beats that keep me motivated, music is a constant source of inspiration.
+                        </p>
+                        <h3>Analyzing the<span class="blue"> Human Puzzle:</span></h3>
+                          <p>People intrigue me endlessly. I enjoy observing and analyzing human behavior, understanding what makes individuals tick, and appreciating the diversity of perspectives that exist in our world. It's like solving a complex puzzle that constantly evolves.
+                        </p>
+                                  <p>In essence, I'm a Graduate Engineer Trainee with an unwavering passion for engineering, a love for connecting with people, a wanderlust for solo adventures, an addiction to cinematic experiences, a deep connection with music, and an insatiable curiosity about human nature. Life is an ever-evolving story, and I'm excited to keep writing new chapters filled with experiences, growth, and meaningful connections. Join me on this journey, and let's explore the world and its wonders together!</p>
+                    </div>
+                
+            </div>
+        
+    </section>
+    
+    <section id="skills">
+        <div class="section-title">
+            <h2>ACADEMICS</h2>
+            <p>My Excellence</p>
+        </div>
+        <div class="p-one parallax-inner">
+        <ul class="cards-split-delay">
+        <li class="card12 card-1"><img src="https://c4.wallpaperflare.com/wallpaper/517/113/116/glare-smudges-light-color-wallpaper-thumb.jpg"/>
+            <div class="content12">
+              <h1 style="color: red;">SSLC</h1>
+              <p style="color: red;">94%</p>
+            </div>
+          </li>
+          <li class="card12 card-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpaODAnQmyRmMUDkm5s8GmiU8xvKLzLf7XZIPPlWk8yqvlWZva4REqHe1psLeYQvpY_ec&usqp=CAU"/>
+            <div class="content12">
+              <h1 style="color: red;">HSLC</h1>
+              <p style="color: red;">76%</p>
+            </div>
+          </li>
+          <li class="card12 card-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Ozebi9PRoIH-C-_7z5tVn8pYpJPWJiNCK-47b1QcNOJ27oFesHedmiY8JE7zNqESLWo&usqp=CAU"/>
+            <div class="content12">
+              <h1 style="color: red;">UG</h1>
+              <p style="color: red;">92%</p>
+            </div>
+          </li>
+        </ul></div>
+    </section>
+    <section id="vision" class="dark">
+        <div class="section-title">
+            <h2>VISION</h2>
+            <p>My Goals</p>
+        </div>
+        <div style="width: 97%;">
+            <h3>My Vision:  <span class="blue">A Journey of Passion, Purpose, and Progress</span></h3>
+            <div class="row">
+                <div>
+                    <p>Welcome to my portfolio , a glimpse into my world where passion, purpose, and progress converge. As a Graduate Engineer Trainee in the dynamic IT field, I've embarked on a remarkable journey that fuses my love for technology, my hobbies, and my zest for travel. Join me as I share my vision for a life filled with inspiration, achievement, and exploration.</p>
+                   <h3> <P>1. In the IT World:</P></h3>
+                    <p>I envision a future where I harness the limitless potential of the IT field. As a Graduate Engineer Trainee, I am committed to continuous learning, innovation, and the pursuit of excellence. My website will be a repository of my IT insights, coding adventures, and tech-driven projects.</p>
+                    <h3><p>2. Badminton, My happiness:</p></h3>
+                    <p>Beyond the realm of technology, I find solace and exhilaration on the badminton court. My vision includes playing the sport I love. I will share my experiences, tips for aspiring players, and updates on my journey to become a better badminton player.</p>
+                    <h3><p>3. Reality Escapes:</p></h3>
+                    <P>Movies are more than just entertainment; they are journeys to different worlds, emotions, and perspectives. I'll be your cinematic guide, offering reviews, recommendations, and discussions on the latest films and timeless classics. Join me in exploring the magic of the silver screen.</P>
+                    <h3><p>4. Wanderlust:</p></h3>
+                    <p>Travel is a profound teacher, and I'm a devoted student. My vision includes sharing my  adventures, from bustling cities to serene landscapes. Expect travel guides, tips, and anecdotes that inspire you to embark on your own journeys of discovery.</p>
+                    <h3><p>5. Bridging Passions:</p></h3>
+                    <p>I believe in the synergy of diverse interests. Through my website, I aim to connect my love for IT, badminton, movies, and travel, showcasing how these passions complement and enhance each other. I'll explore the intersections, such as in travel and cinema's influence on creativity and suggestions.</p>
+                    <h3><p>6. Community Building:</p></h3>
+                    <p>I envision a vibrant online community of like-minded individuals who share my passions. Through forums, discussions, and collaborative projects, we can collectively enrich our lives and the world around us.</p>
+                    <p>In this space, my vision unfolds—a vision where IT innovation, badminton prowess, cinematic appreciation, and global exploration converge to create a life of purpose and fulfillment. Join me in this exciting journey, and together, we'll celebrate the beauty of passion and the boundless possibilities it offers.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="Intrests" style="height: 124vh;">
+        <div class="section-title">
+            <h2>INTERESTS</h2>
+            <p>My Hobbies</p>
+        </div>
+        <div class="box-container">
+            <div class="box-item">
+            <div class="flip-box" style="width: 90%;">
+              <div class="flip-box-front text-center" style="background-image: url('https://images.unsplash.com/photo-1540224871915-bc8ffb782bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5ldGZsaXglMjBhbmQlMjBjaGlsbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Movies and Series</h3>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-color: red;">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Movies and Series</h3>
+                  <p>Explore the fascinating world of movies and series. Join me as we delve into cinematic masterpieces, review the latest releases, and discuss the art of storytelling through film and television.
+                </p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box" style="width: 90%;">
+              <div class="flip-box-front text-center" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5bd969d6506fbe4b1a0f5e6b/1613556027347-TNYY9VEX2PRTODIHEP9J/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Playing Badminton</h3>
+                  
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-color: blue;">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Playing Badminton</h3>
+                  <p>Experience the thrill of badminton through my eyes. Get tips to improve your game, discover the best equipment, and connect with fellow badminton enthusiasts.
+                    .</p>
+                
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="box-item">
+            <div class="flip-box" style="width: 90%;">
+              <div class="flip-box-front text-center filter-" style="background-image: url('https://www.oyorooms.com/blog/wp-content/uploads/2018/01/pexels-photo-93827.jpeg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Travel alone</h3>
+                 
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-color: green;">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Travel alone</h3>
+                  <p>Embark on solo adventures with me. Read travel diaries, access destination guides, and find inspiration for your own solo journeys. Connect with a community of solo travelers and share your experiences.</p>
+                  
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="bottom">
+            
+                <p>Toggle this for dark mode</p><input type="checkbox" class="toggle" onclick="myFunc()"  id="darkmode">
+
+
+                
+                <div id="chatbot-icon" class="chatbot-icon">
+                    <img src="CHAT_BOT.jfif" alt="Chatbot Icon">
+                </div>
+            
+                <!-- Chatbot Container -->
+                <div id="chatbot-container" class="chatbot-container">
+                    <div class="chat-header">
+                        <h3>Chatbot</h3>
+                        <button id="close-chatbot" class="close-button">X</button>
+                    </div>
+                    <div class="chat-content" id="chat-content">
+                        <!-- Chat messages will be displayed here -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Type a message...">
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+                <p>
+                    © 2023 Vishal Radhakrishnan Portfolio - All Rights Reserved.</p>
+                    </div>
+        
+    </section>
+    
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://slick/slick.min.js"></script>  
+</body>
+</html>
